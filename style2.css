@@ -1,0 +1,27 @@
+form{
+    width: 600px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color:#ccc;
+    align-items: center;
+}
+
+form1{
+    width: 300px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color:#ccc;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-family:verdana;
+}
+
+h3{
+    text-align: center;
+    font-family:verdana;
+}
