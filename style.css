@@ -1,14 +1,62 @@
-form{
-    width: 500px;
-    padding: 16px;
-    border-radius: 10px;
-    margin: auto;
-    background-color:#ccc;
-    align-items: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-h1{
-    text-align: center;
-    font-family:verdana;
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(17, 96, 128, 0.9),rgba(0,8,51,0.9)), url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
 }
+
+.search-bar{
+    width: 80%;
+    max-height: 700px;
+   background:rgba(255,255,255,0.2);
+   display: flex;
+   align-items: center;
+   border-radius: 100px;
+   padding: 20px 50px;
+   backdrop-filter: blur(4px) saturate(180%);
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+
+::placeholder{
+    color: #cac7ff;
+}
+
+.search-bar button img{
+    width: 50px; 
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    background:transparent;
+    cursor: pointer;
+}
+
+
+/*
+Chat*/
+
 
