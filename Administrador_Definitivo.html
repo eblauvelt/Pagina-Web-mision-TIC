@@ -11,59 +11,61 @@
       
     
     <style>
-          
-        /* styling navlist */
-        #navlist {
+        <style type="text/css">
+		*{
+		padding:0px;
+		margin:0px;
+
+}
+
+ /* styling navlist */
+ #navlist {
             background-color: rgba(17, 96, 128, 0.9);
             position: absolute;
             width: 100%;
         }
-          
-        /* styling navlist anchor element */
-        #navlist a {
-            float:left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 12px;
-            text-decoration: none;
-            font-size: 15px;
-        }
-        .navlist-right{
-            float:right;
-        }
-  
-        /* hover effect of navlist anchor element */
-        #navlist a:hover {
+ul,ol{
+	list-style: none;
+}
+
+.nav li a{
+	background-color: rgba(17, 96, 128, 0.9);
+	color: #f2f2f2;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+}
+
+ /* hover effect of navlist anchor element */
+ #navlist a:hover {
             background-color: #ddd;
             color: black;
         }
-          
-        /* styling search bar */
-        .search input[type=text]{
-            width:300px;
-            height:25px;
-            border-radius:25px;
-            border: none;
-  
-        }
-          
-        .search{
-            float:right;
-            margin:7px;
-  
-        }
-          
-        .search button{
-            background-color: rgba(17, 96, 128, 0.9);
-            color: #f2f2f2;
-            float: right;
-            padding: 5px 10px;
-            margin-right: 16px;
-            font-size: 12px;
-            border: none;
-            cursor: pointer;
-        } 
+
+
+.nav > li {
+	float:left;
+
+}
+
+.nav li ul {
+display: none;
+position: absolute;
+min-width: 140px;
+}
+
+.nav li:hover > ul {
+display: block;
+}
+
+.nav li ul li {
+position: relative;
+}	
+.nav li ul li ul {
+right: -140px;
+top: 0px;	
+}  
+        
     </style>
 </head>
   
@@ -71,15 +73,28 @@
       
     <!-- Navbar items -->
     <div id="navlist">
-        <a href="#">Visitas</a>
-        <a href="#">Comentarios</a>
-        <a href="#">Imagenes</a>
-        <a href="#">Dashboard </a>
-        
-        
-          
-        <!-- search bar right align -->
-        <div class="search">
+		     <ul class="nav">
+			
+             <li><a href="#">Visitas</a><ul></ul>
+             <li><a href="#">Comentarios</a><ul></ul>
+             <li><a href="#">Imagenes</a><ul></ul>
+			 <li><a href="#">Dashboard</a><ul>
+					
+         <li><a href="">animales</a></li>
+         <li><a href="">animales</a></li>
+         <li><a href="">animales</a></li>
+         <li><a href="">animales</a>
+
+          <ul><li><a href="">animales</a></li>
+         <li><a href="new.html">animales</a></li>
+         <li><a href="">animales</a></li>
+         <li><a href="">animales</a></li></ul>
+
+         </li>
+     </div>
+      
+   <!-- search bar right align -->
+    <div class="search">
               
             <form action="#">
                 <input type="text"
@@ -90,7 +105,7 @@
                 </button>
             </form>
         </div>
-    </div>
+    
     
 
     <!-- logo with tag -->
